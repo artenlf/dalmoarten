@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { lightGrey } from "../../assets/styles/colors";
+import { ltGrey } from "../../assets/styles/Colors";
 
 const NavMenu = styled.nav`
-  color: ${lightGrey};
-  height: 29px;
-  left: 844px;
+  color: ${ltGrey};
+  height: 80px;
+  left: 1200px;
   position: absolute;
-  top: 40px;
+  top: 30px;
   width: 305px;
 `;
 
