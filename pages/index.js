@@ -4,8 +4,6 @@ import Header from "../components/Header/Header";
 import Logo from "../components/Logo/Logo";
 import NavMenu from "../components/NavMenu/NavMenu";
 import NavLink from "../components/NavMenu/NavLink";
-import logo from "/assets/img/logo.png";
-
 function Home() {
   return (
     <>
