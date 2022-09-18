@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const NavMenu = styled.nav`
-  left: 1200px;
-  position: absolute;
-  top: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  width: 80vw;
 `;
 
 export default NavMenu;
