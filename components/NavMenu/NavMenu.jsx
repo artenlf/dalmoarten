@@ -1,13 +1,21 @@
 import styled from "styled-components";
-import { ltGrey } from "../../assets/styles/Colors";
+import NavLink from "./NavLink";
 
 const NavMenu = styled.nav`
-  color: ${ltGrey};
-  height: 80px;
   left: 1200px;
   position: absolute;
   top: 30px;
-  width: 305px;
 `;
 
-export default NavMenu;
+const NavContainer = () => {
+  const linkLabel = ["Home", "Sobre", "Serviços", "Contato"];
+  return (
+    <NavMenu>
+      {linkLabel.map((label, index) => (
+        <NavLink key={index}>{label}</NavLink>
+      ))}
+    </NavMenu>
+  );
+};
+
+export default NavContainer;

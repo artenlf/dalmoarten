@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { golden } from "../../assets/styles/Colors";
+import { golden, ltGrey } from "../../assets/styles/Colors";
 
 const NavLink = styled.a`
+  color: ${ltGrey};
   font-size: 18px;
   margin-right: 2em;
 
