@@ -7,17 +7,11 @@ const Button = styled.button`
   border: none;
   color: ${black};
   cursor: pointer;
-  display: flex;
   font-size: 18px;
   font-weight: 700;
-  flex-direction: row;
-  justify-content: center;
   height: 56px;
-  right: 3rem;
   padding: 1rem 4rem;
-  position: absolute;
   width: 180px;
-  top: 12.5px;
   transition: all 0.3s ease-in-out;
 
   :hover {

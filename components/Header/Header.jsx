@@ -1,6 +1,6 @@
 import HeaderContainer from "./HeaderContainer";
 import Logo from "../Logo/Logo";
-import Button from "../Button/Button";
+import Login from "../Button/Login";
 import NavMenu from "../NavMenu/NavMenu";
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
     <HeaderContainer>
       <Logo />
       <NavMenu />
-      <Button type="button">Login</Button>
+      <Login type="button">Login</Login>
     </HeaderContainer>
   );
 };
