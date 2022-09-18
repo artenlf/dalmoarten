@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import NavLink from "./NavLink";
+import NavContainer from "./NavContainer";
 
-const NavMenu = styled.nav`
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  height: 80px;
-  width: 80vw;
-`;
+const NavMenu = () => {
+  const linkLabel = ["Home", "Sobre", "Serviços", "Contato"];
+  return (
+    <NavContainer>
+      {linkLabel.map((label, index) => (
+        <NavLink key={index}>{label}</NavLink>
+      ))}
+    </NavContainer>
+  );
+};
 
 export default NavMenu;
