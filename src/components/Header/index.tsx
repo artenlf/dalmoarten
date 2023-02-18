@@ -5,43 +5,57 @@ import Logo from "../../assets/Logo.png"
 export function Header() {
   return (
     <div
-      className="bg-slate-900 w-full h-20 flex items-center justify-between px-8"
+      className="bg-slate-900 w-full h-32 flex items-center justify-between px-8"
     >
       <Image
         src={Logo}
-        width={80}
-        height={80}
+        width={96}
+        height={96}
         alt=""
       />
-      <nav className="text-gray-100 text-lg flex gap-4 mr-[-50rem]">
+      <nav className="text-gray-100 text-lg flex gap-8 mr-[-50rem]">
         <Link
-          href={''}
-          className="hover:text-gold-700"
+          href={'/'}
+          className="hover:text-gold-700 transition ease-in-out delay-200 
+          hover:-translate-y-1 hover:scale-110 hover:underline"
         >
           Home
         </Link>
         <Link
-          href={''}
-          className="hover:text-gold-700"
+          href={'/about'}
+          className="hover:text-gold-700 transition ease-in-out delay-200 
+          hover:-translate-y-1 hover:scale-110 hover:underline"
         >
           Sobre
         </Link>
         <Link
-          href={''}
-          className="hover:text-gold-700"
+          href={'/services'}
+          className="hover:text-gold-700 transition ease-in-out delay-200 
+          hover:-translate-y-1 hover:scale-110 hover:underline"
         >
           Serviços
         </Link>
         <Link
-          href={''}
-          className="hover:text-gold-700"
+          href={'/contact'}
+          className="hover:text-gold-700 transition ease-in-out delay-200 
+          hover:-translate-y-1 hover:scale-110 hover:underline"
         >
           Contato
         </Link>
       </nav>
       <button
-        className="bg-gray-100 text-slate-900 text-lg font-semibold w-40 h-14 hover:text-gold-700">
-        Login
+        type="button"
+        className="bg-gray-100 text-slate-900 text-lg font-semibold w-40 h-14
+         hover:text-gold-700 transition ease-in-out delay-200 
+         hover:-translate-y-1 hover:scale-110 hover:bg-slate-100 duration-300"
+      >
+        <a
+          href="https://app.acessorias.com/?login"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Login
+        </a>
       </button>
     </div>
   )
