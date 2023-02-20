@@ -42,6 +42,13 @@ export function Header() {
         >
           Contato
         </Link>
+        <Link
+          href={'/blog'}
+          className="hover:text-gold-700 transition ease-in-out delay-140 
+          hover:-translate-y-1 hover:scale-110 hover:underline"
+        >
+          Blog
+        </Link>
       </nav>
       <button
         type="button"

@@ -3,8 +3,8 @@ import BannerImage from '../assets/banner/1.png'
 
 export default function Home() {
   return (
-    <div className="h-[25rem] flex items-center px-32 justify-evenly">
-      <div className='flex flex-col gap-8 w-[41rem]'>
+    <div className="py-4 bg-slate-300 flex items-center px-32 justify-evenly">
+      <div className='flex flex-col gap-8 max-w-[41rem]'>
         <h1
           className="text-3xl font-bold text-slate-900">
           Contabilidade descomplicada e tranquilidade para o seu negócio crescer!
@@ -18,9 +18,9 @@ export default function Home() {
           Sequi, necessitatibus! Sequi!
         </h2>
         <button
-          className='bg-slate-400 text-gray-100 font-bold h-16 w-48 rounded-full 
+          className='bg-slate-900 text-gray-100 font-bold py-5 w-48 rounded-full 
           hover:text-gold-700 transition ease-in-out delay-140 
-         hover:-translate-y-1 hover:scale-110 hover:bg-slate-300 duration-200'
+         hover:-translate-y-1 hover:scale-110 hover:bg-slate-700 duration-200'
         >
           Saiba Mais
         </button>
