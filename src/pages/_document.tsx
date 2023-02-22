@@ -25,6 +25,7 @@ export default function Document() {
         <Main />
         <Footer />
         <NextScript />
+        <script />
       </body>
     </Html>
   )
