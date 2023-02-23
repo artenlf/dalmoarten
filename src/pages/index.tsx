@@ -1,7 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Buildings, Calculator, Person, Receipt } from 'phosphor-react'
-import BannerImage from '../assets/banner/1.png'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as Accordion from '@radix-ui/react-accordion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Buildings, Calculator, Person, Receipt } from 'phosphor-react';
+import BannerImage from '../assets/banner/1.png';
 
 export default function Home() {
   return (
@@ -31,6 +34,69 @@ export default function Home() {
         <Image src={BannerImage} height={400} alt="" />
       </section>
       <section className='flex flex-col p-8 gap-4'>
+        <Accordion.Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
+          <Accordion.Item className="AccordionItem" value="item-1" >
+            <Accordion.Trigger className='flex'>
+              Test1?
+              <FontAwesomeIcon className='ml-2' icon={faChevronDown} />
+            </Accordion.Trigger>
+            <Accordion.Content>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+            </Accordion.Content>
+          </Accordion.Item>
+
+          <Accordion.Item className="AccordionItem" value="item-2">
+            <Accordion.Trigger>
+              Test2 text?
+              <FontAwesomeIcon className='ml-2' icon={faChevronUp} />
+            </Accordion.Trigger>
+            <Accordion.Content>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+            </Accordion.Content>
+          </Accordion.Item>
+
+          <Accordion.Item className="AccordionItem" value="item-3">
+            <Accordion.Trigger>
+              Test3 text text?
+              <FontAwesomeIcon className='ml-2' icon={faChevronUp} />
+            </Accordion.Trigger>
+            <Accordion.Content className="AccordionContent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+            </Accordion.Content>
+          </Accordion.Item>
+        </Accordion.Root>
+      </section>
+      <section
+        className=' bg-slate-900 text-gray-100 py-4 px-32 flex flex-col items-center'
+      >
+        <span className='text-gray-300'>Nossas especialidades e</span>
+        <h2 className='text-2xl font-bold'>Atividades Atendidas</h2>
+        <div className='grid grid-cols-3 gap-x-16 gap-y-4 mt-8'>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Desenvolvedores e profissionais de TI</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Nômades Digitais</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Prestadores de Serviços p/ Exterior</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Prestadores de Serviços em Geral (PJ)</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Microempreendedores Individuais (MEI)</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Escritórios de Advocacia</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Escritórios de Engenharia e Arquitetura</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Médicas</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Estéticas</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas de Fisioterapia</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Odontológicas</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Profissionais de Psicologia</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Agências de Propaganda e Marketing</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Representantes Comerciais</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Revendedores</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Produtores de Conteúdo</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Bares e Restaurantes</span>
+          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Varejistas</span>
+        </div>
+        <span className='text-lg font-bold mt-16'>E mais!</span>
+        <p className='text-sm text-gray-300 mt-8'>Não encontrou a sua atividade? Envie sua mensagem agora mesmo para que um de nossos especialistas possa te orientar, sem custo algum.</p>
+      </section>
+      <section
+        className=' bg-slate-300 flex flex-col p-8 gap-4'
+      >
         <h2
           className='font-bold text-3xl text-center text-slate-900 mx-auto max-w-xl'
         >
@@ -74,49 +140,6 @@ export default function Home() {
             </Link>
           </button>
         </div>
-      </section>
-      <section
-        className=' bg-slate-900 text-gray-100 py-4 px-32 flex flex-col items-center'
-      >
-        <span className='text-gray-300'>Nossas especialidades e</span>
-        <h2 className='text-2xl font-bold'>Atividades Atendidas</h2>
-        <div className='grid grid-cols-3 gap-x-16 gap-y-4 mt-8'>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Desenvolvedores e profissionais de TI</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Nômades Digitais</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Prestadores de Serviços p/ Exterior</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Prestadores de Serviços em Geral (PJ)</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Microempreendedores Individuais (MEI)</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Escritórios de Advocacia</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Escritórios de Engenharia e Arquitetura</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Médicas</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Estéticas</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas de Fisioterapia</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Clínicas Odontológicas</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Profissionais de Psicologia</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Agências de Propaganda e Marketing</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Representantes Comerciais</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Revendedores</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Produtores de Conteúdo</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Bares e Restaurantes</span>
-          <span className='bg-slate-700 rounded-full py-2 px-8 hover:text-gold-700'>Varejistas</span>
-        </div>
-        <span className='text-lg font-bold mt-16'>E mais!</span>
-        <p className='text-sm text-gray-300 mt-8'>Não encontrou a sua atividade? Envie sua mensagem agora mesmo para que um de nossos especialistas possa te orientar, sem custo algum.</p>
-      </section>
-      <section
-        className=' bg-slate-300 py-4 px-32 justify-evenly'
-      >
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
       </section>
       <section
         className='py-4 px-32 justify-evenly'
