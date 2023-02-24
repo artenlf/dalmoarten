@@ -1,19 +1,11 @@
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as Accordion from "@radix-ui/react-accordion";
+import { ChevronDownIcon, ChevronUpIcon } from '@radix-ui/react-icons';
 import Image from "next/image";
 import Link from "next/link";
 import { Buildings, Calculator, Person, Receipt } from "phosphor-react";
-import { useState } from "react";
 import BannerImage from "../assets/banner/1.png";
 
 export default function Home() {
-  const [activeAccordionItem, setActiveAccordionItem] = useState("item-1");
-
-  function handleAccordionOpen(value: string) {
-    setActiveAccordionItem(value)
-  }
-
   return (
     <main>
       <section className="bg-slate-300 flex items-center py-4 px-32 justify-evenly">
@@ -52,67 +44,58 @@ export default function Home() {
           <Accordion.Root
             type="single"
             defaultValue="item-1"
-            collapsible
             className="flex flex-col gap-4"
           >
             <Accordion.Item value="item-1">
-              <Accordion.Trigger
-                className="flex"
-                onClick={() => handleAccordionOpen("item-1")}
-              >
-                Test1?
-                <FontAwesomeIcon
-                  size='sm'
-                  className="ml-2"
-                  icon={
-                    activeAccordionItem === "item-1" ?
-                      faChevronDown : faChevronUp
-                  }
-                />
-              </Accordion.Trigger>
+              <Accordion.Header className="">
+                text
+                <Accordion.Trigger
+                  className="ml-2 data-[state=closed]:rotate-180"
+                >
+                  <ChevronDownIcon aria-hidden />
+                </Accordion.Trigger>
+              </Accordion.Header>
               <Accordion.Content
-                className="text-justify"
+                className="text-justify overflow-hidden 
+                data-[state=open]:animate-slideDown 
+                data-[state=closed]:animate-slideUp"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
               </Accordion.Content>
             </Accordion.Item>
 
             <Accordion.Item value="item-2">
-              <Accordion.Trigger
-                onClick={() => handleAccordionOpen("item-2")}
-              >
-                Test2 text?
-                <FontAwesomeIcon
-                  size='sm'
-                  className="ml-2"
-                  icon={
-                    activeAccordionItem === "item-2" ?
-                      faChevronDown : faChevronUp
-                  }
-                />
-              </Accordion.Trigger>
+              <Accordion.Header>
+                Text 2 text
+                <Accordion.Trigger
+                  className="ml-2 data-[state=open]:rotate-180"
+                >
+                  <ChevronUpIcon aria-hidden />
+                </Accordion.Trigger>
+              </Accordion.Header>
               <Accordion.Content
-                className="text-justify"
+                className="text-justify overflow-hidden 
+                data-[state=open]:animate-slideDown 
+                data-[state=closed]:animate-slideUp"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
               </Accordion.Content>
             </Accordion.Item>
 
             <Accordion.Item value="item-3">
-              <Accordion.Trigger
-                onClick={() => handleAccordionOpen("item-3")}
-              >
+              <Accordion.Header>
                 Test3 text text?
-                <FontAwesomeIcon
-                  size='sm'
-                  className="ml-2" icon={
-                    activeAccordionItem === "item-3" ?
-                      faChevronDown : faChevronUp
-                  }
-                />
-              </Accordion.Trigger>
+
+                <Accordion.Trigger
+                  className="ml-2 data-[state=open]:rotate-180"
+                >
+                  <ChevronUpIcon aria-hidden />
+                </Accordion.Trigger>
+              </Accordion.Header>
               <Accordion.Content
-                className="text-justify"
+                className="text-justify overflow-hidden 
+                data-[state=open]:animate-slideDown 
+                data-[state=closed]:animate-slideUp"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
               </Accordion.Content>
