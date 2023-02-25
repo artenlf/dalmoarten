@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <Image src={BannerImage} height={400} alt="" />
       </section>
-      <section className="px-48 py-8 flex flex-col">
+      <section className="px-48 py-8 flex flex-col items-center">
         <h2
           className="font-bold text-2xl text-slate-900 mx-auto mb-8"
         >
@@ -85,6 +85,44 @@ export default function Home() {
             <Accordion.Item value="item-3">
               <Accordion.Header>
                 Test3 text text?
+
+                <Accordion.Trigger
+                  className="ml-2 data-[state=open]:rotate-180"
+                >
+                  <ChevronUpIcon aria-hidden />
+                </Accordion.Trigger>
+              </Accordion.Header>
+              <Accordion.Content
+                className="text-justify overflow-hidden 
+                data-[state=open]:animate-slideDown 
+                data-[state=closed]:animate-slideUp"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+              </Accordion.Content>
+            </Accordion.Item>
+
+            <Accordion.Item value="item-4">
+              <Accordion.Header>
+                Test4 text?
+
+                <Accordion.Trigger
+                  className="ml-2 data-[state=open]:rotate-180"
+                >
+                  <ChevronUpIcon aria-hidden />
+                </Accordion.Trigger>
+              </Accordion.Header>
+              <Accordion.Content
+                className="text-justify overflow-hidden 
+                data-[state=open]:animate-slideDown 
+                data-[state=closed]:animate-slideUp"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+              </Accordion.Content>
+            </Accordion.Item>
+
+            <Accordion.Item value="item-5">
+              <Accordion.Header>
+                Test5?
 
                 <Accordion.Trigger
                   className="ml-2 data-[state=open]:rotate-180"
