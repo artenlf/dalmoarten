@@ -39,7 +39,7 @@ export default function Home() {
           Contabilidade na medida para a sua Empresa
         </h2>
         <div
-          className="grid grid-cols-2 max-w-4xl"
+          className="grid grid-cols-2"
         >
           <Accordion.Root
             type="single"
@@ -47,7 +47,9 @@ export default function Home() {
             className="flex flex-col gap-4"
           >
             <Accordion.Item value="item-1">
-              <Accordion.Header className="">
+              <Accordion.Header
+                className="font-bold text-lg flex justify-between mb-2"
+              >
                 text
                 <Accordion.Trigger
                   className="ml-2 data-[state=closed]:rotate-180"
@@ -56,7 +58,7 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden 
+                className="text-justify overflow-hidden pr-10 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
@@ -65,7 +67,9 @@ export default function Home() {
             </Accordion.Item>
 
             <Accordion.Item value="item-2">
-              <Accordion.Header>
+              <Accordion.Header
+                className="font-bold text-lg flex justify-between mb-2"
+              >
                 Text 2 text
                 <Accordion.Trigger
                   className="ml-2 data-[state=open]:rotate-180"
@@ -74,7 +78,7 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden 
+                className="text-justify overflow-hidden pr-10 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
@@ -83,7 +87,9 @@ export default function Home() {
             </Accordion.Item>
 
             <Accordion.Item value="item-3">
-              <Accordion.Header>
+              <Accordion.Header
+                className="font-bold text-lg flex justify-between mb-2"
+              >
                 Test3 text text?
 
                 <Accordion.Trigger
@@ -93,7 +99,7 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden 
+                className="text-justify overflow-hidden pr-10 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
@@ -102,7 +108,9 @@ export default function Home() {
             </Accordion.Item>
 
             <Accordion.Item value="item-4">
-              <Accordion.Header>
+              <Accordion.Header
+                className="font-bold text-lg flex justify-between mb-2"
+              >
                 Test4 text?
 
                 <Accordion.Trigger
@@ -112,7 +120,7 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden 
+                className="text-justify overflow-hidden pr-10 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
@@ -121,7 +129,9 @@ export default function Home() {
             </Accordion.Item>
 
             <Accordion.Item value="item-5">
-              <Accordion.Header>
+              <Accordion.Header
+                className="font-bold text-lg flex justify-between mb-2"
+              >
                 Test5?
 
                 <Accordion.Trigger
@@ -131,7 +141,7 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden 
+                className="text-justify overflow-hidden pr-10 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
