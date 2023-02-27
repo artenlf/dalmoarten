@@ -25,7 +25,7 @@ export default function Home() {
           <button
             className="bg-slate-900 text-gray-100 font-bold py-5 w-48 rounded-full 
           hover:text-gold-700 transition ease-in-out delay-140 
-         hover:-translate-y-1 hover:scale-110 hover:bg-slate-700 duration-200"
+         hover:-translate-1 hover:scale-110 hover:bg-slate-700 duration-200"
           >
             Saiba Mais
           </button>
@@ -321,7 +321,7 @@ export default function Home() {
             >
               Escolher o plano
             </button>
-            <div className="place-self-start pl-16 mt-2 text-sm space-y-2">
+            <div className="place-self-start pl-16 mt-2 text-sm space-y-2 max-w-[15rem]">
               <p>Contabilidade completa</p>
               <p>Folha de pagamentos (grátis até 3 funcionários)</p>
               <p>Pró-Labore</p>
