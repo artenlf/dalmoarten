@@ -1,5 +1,5 @@
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDownIcon, ChevronUpIcon } from '@radix-ui/react-icons';
+import { ChevronUpIcon } from '@radix-ui/react-icons';
 import Image from "next/image";
 import Link from "next/link";
 import { Buildings, Calculator, Person, Receipt } from "phosphor-react";
@@ -48,13 +48,18 @@ export default function Home() {
           >
             <Accordion.Item value="item-1">
               <Accordion.Header
-                className="font-bold text-lg flex justify-between mb-2"
+                className="font-bold text-lg flex mb-2"
               >
-                text
                 <Accordion.Trigger
-                  className="ml-2 data-[state=closed]:rotate-180"
+                  className="flex h-8 flex-1 items-center justify-between 
+                  ml-2 group cursor-pointer"
                 >
-                  <ChevronDownIcon aria-hidden />
+                  Text
+                  <ChevronUpIcon
+                    className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
+                  transition-transform duration-300 
+                  group-data-[state=open]:rotate-180"
+                    aria-hidden />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
@@ -68,13 +73,18 @@ export default function Home() {
 
             <Accordion.Item value="item-2">
               <Accordion.Header
-                className="font-bold text-lg flex justify-between mb-2"
+                className="font-bold text-lg flex mb-2"
               >
-                Text 2 text
                 <Accordion.Trigger
-                  className="ml-2 data-[state=open]:rotate-180"
+                  className="flex h-8 flex-1 items-center justify-between 
+                  ml-2 group cursor-pointer"
                 >
-                  <ChevronUpIcon aria-hidden />
+                  Text Text
+                  <ChevronUpIcon
+                    className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
+                   transition-transform duration-300 
+                   group-data-[state=open]:rotate-180"
+                    aria-hidden />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
@@ -88,14 +98,18 @@ export default function Home() {
 
             <Accordion.Item value="item-3">
               <Accordion.Header
-                className="font-bold text-lg flex justify-between mb-2"
+                className="font-bold text-lg flex mb-2"
               >
-                Test3 text text?
-
                 <Accordion.Trigger
-                  className="ml-2 data-[state=open]:rotate-180"
+                  className="flex h-8 flex-1 items-center justify-between 
+                  ml-2 group cursor-pointer"
                 >
-                  <ChevronUpIcon aria-hidden />
+                  Text Text Text
+                  <ChevronUpIcon
+                    className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
+                   transition-transform duration-300 
+                   group-data-[state=open]:rotate-180"
+                    aria-hidden />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
@@ -109,14 +123,18 @@ export default function Home() {
 
             <Accordion.Item value="item-4">
               <Accordion.Header
-                className="font-bold text-lg flex justify-between mb-2"
+                className="font-bold text-lg flex mb-2"
               >
-                Test4 text?
-
                 <Accordion.Trigger
-                  className="ml-2 data-[state=open]:rotate-180"
+                  className="flex h-8 flex-1 items-center justify-between 
+                  ml-2 group cursor-pointer"
                 >
-                  <ChevronUpIcon aria-hidden />
+                  Text Text
+                  <ChevronUpIcon
+                    className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
+                   transition-transform duration-300 
+                   group-data-[state=open]:rotate-180"
+                    aria-hidden />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
@@ -130,14 +148,18 @@ export default function Home() {
 
             <Accordion.Item value="item-5">
               <Accordion.Header
-                className="font-bold text-lg flex justify-between mb-2"
+                className="font-bold text-lg flex mb-2"
               >
-                Test5?
-
                 <Accordion.Trigger
-                  className="ml-2 data-[state=open]:rotate-180"
+                  className="flex h-8 flex-1 items-center justify-between 
+                  ml-2 group cursor-pointer"
                 >
-                  <ChevronUpIcon aria-hidden />
+                  Text
+                  <ChevronUpIcon
+                    className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
+                   transition-transform duration-300 
+                   group-data-[state=open]:rotate-180"
+                    aria-hidden />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
