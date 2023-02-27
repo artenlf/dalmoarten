@@ -1,5 +1,5 @@
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronUpIcon } from '@radix-ui/react-icons';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Image from "next/image";
 import Link from "next/link";
 import { Buildings, Calculator, Person, Receipt } from "phosphor-react";
@@ -54,8 +54,8 @@ export default function Home() {
                   className="flex h-8 flex-1 items-center justify-between 
                   ml-2 group cursor-pointer"
                 >
-                  Text
-                  <ChevronUpIcon
+                  Excelência e Expertise da empresa individual à indústria
+                  <ChevronDownIcon
                     className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
                   transition-transform duration-300 
                   group-data-[state=open]:rotate-180"
@@ -63,11 +63,15 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden pr-10 
+                className="text-justify overflow-hidden pr-10 pl-4 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+                Nosso escritório é conhecido por oferecer
+                serviços de excelência para nossos clientes. Contando com mais de 30 anos de
+                experiência no mercado e time de profissionais
+                altamente capacitados, estamos preparados para atender as
+                necessidades de empresas dos mais diversos portes e setores.
               </Accordion.Content>
             </Accordion.Item>
 
@@ -79,8 +83,8 @@ export default function Home() {
                   className="flex h-8 flex-1 items-center justify-between 
                   ml-2 group cursor-pointer"
                 >
-                  Text Text
-                  <ChevronUpIcon
+                  Eficiência e Agilidade para à serviço da sua empresa
+                  <ChevronDownIcon
                     className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
                    transition-transform duration-300 
                    group-data-[state=open]:rotate-180"
@@ -88,11 +92,19 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden pr-10 
+                className="text-justify overflow-hidden pr-10 pl-4 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+                Oferecemos soluções personalizadas para cada cliente,
+                sempre visando maximizar seus resultados e reduzir seus custos.
+                Contamos tanto um atendimento presencial em nosso escritório
+                quanto atendimento digital de qualidade, por meio de canais
+                de comunicação como WhatsApp, e-mail, telefone e videoconferência.
+                Dessa forma, nossos clientes podem escolher a opção que melhor
+                se adequa às suas necessidades e preferências.
+                Além disso, contamos com uma infraestrutura moderna e
+                tecnológica que nos permite fornecer um atendimento ágil e eficiente.
               </Accordion.Content>
             </Accordion.Item>
 
@@ -104,8 +116,8 @@ export default function Home() {
                   className="flex h-8 flex-1 items-center justify-between 
                   ml-2 group cursor-pointer"
                 >
-                  Text Text Text
-                  <ChevronUpIcon
+                  Compromisso com a transparência e com o sucesso
+                  <ChevronDownIcon
                     className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
                    transition-transform duration-300 
                    group-data-[state=open]:rotate-180"
@@ -113,11 +125,15 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden pr-10 
+                className="text-justify overflow-hidden pr-10 pl-4 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+                Nosso compromisso com a transparência e a
+                ética são valores inegociáveis. Estamos sempre em busca das
+                melhores práticas e atualizações na legislação para garantir
+                que nossos clientes estejam em conformidade com as normas e
+                regulamentações aplicáveis.
               </Accordion.Content>
             </Accordion.Item>
 
@@ -129,8 +145,8 @@ export default function Home() {
                   className="flex h-8 flex-1 items-center justify-between 
                   ml-2 group cursor-pointer"
                 >
-                  Text Text
-                  <ChevronUpIcon
+                  Nossa meta: o crescimento do seu negócio
+                  <ChevronDownIcon
                     className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
                    transition-transform duration-300 
                    group-data-[state=open]:rotate-180"
@@ -138,11 +154,15 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden pr-10 
+                className="text-justify overflow-hidden pr-10 pl-4 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+                Seja em contabilidade, planejamento tributário, ou relatórios financeiros,
+                nossa meta é auxiliar no crescimento da sua empresa.
+                Nossos serviços são projetados para economizar tempo e dinheiro,
+                eliminando a parte burocrática e fornecendo ferramentas para que a gestão
+                atue somente no crescimento do negócio.
               </Accordion.Content>
             </Accordion.Item>
 
@@ -154,8 +174,8 @@ export default function Home() {
                   className="flex h-8 flex-1 items-center justify-between 
                   ml-2 group cursor-pointer"
                 >
-                  Text
-                  <ChevronUpIcon
+                  Foque no que realmente importa!
+                  <ChevronDownIcon
                     className="text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] 
                    transition-transform duration-300 
                    group-data-[state=open]:rotate-180"
@@ -163,11 +183,15 @@ export default function Home() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content
-                className="text-justify overflow-hidden pr-10 
+                className="text-justify overflow-hidden pr-10 pl-4 
                 data-[state=open]:animate-slideDown 
                 data-[state=closed]:animate-slideUp"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam et commodi possimus earum rerum, nisi asperiores eligendi ipsa cum nesciunt officiis quos beatae vero consequuntur modi, deserunt adipisci expedita!
+                Conte conosco para cuidar da gestão contábil e financeira da
+                sua empresa de forma profissional, confiável e eficiente. Estamos prontos
+                para ajudar a você e o seu negócio a alcançarem o sucesso.
+                Escolha o plano que melhor atender as necessidades da sua empresa,
+                ou entre contato com um de nossos especialistas.
               </Accordion.Content>
             </Accordion.Item>
           </Accordion.Root>
@@ -249,19 +273,89 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="py-4 px-32 justify-evenly"
+        className="py-4 px-32 flex flex-col gap-2 justify-evenly items-center"
       >
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
+        <h2 className="font-bold text-2xl text-slate-900">Confira os nossos Planos</h2>
+        <span>Na medida certa para o seu negócio</span>
+        <div className="grid grid-cols-3 gap-12 my-8">
+          <div className="flex flex-col gap-2 items-center max-w-sm p-6 bg-slate-100 rounded-lg">
+            <h3
+              className="font-bold text-slate-700"
+            >
+              Microempreendedor Individual (MEI)
+            </h3>
+            <span
+              className="mx-auto font-bold text-4xl"
+            >
+              R$ 149,00
+            </span>
+            <button className="bg-slate-900 text-slate-100 
+            py-3 px-10 rounded-full 
+            hover:text-gold-700 transition ease-in-out delay-140 
+              hover:-translate-1 hover:scale-110 hover:bg-slate-700 duration-200"
+            >
+              Escolher o plano
+            </button>
+            <div className="place-self-start pl-16 mt-2 text-sm space-y-2">
+              <p>Contabilidade completa</p>
+              <p>Impostos e obrigações</p>
+              <p>Planejamento tributário</p>
+              <p>Relatórios</p>
+              <p>Abertura gratuita*</p>
+            </div>
+          </div>
+          <div
+            className="flex flex-col gap-2 items-center max-w-sm p-6
+           bg-slate-100 rounded-lg"
+          >
+            <h3
+              className="font-bold text-slate-700"
+            >
+              Prestadoras de Serviços
+            </h3>
+            <span className="mx-auto font-bold text-4xl">R$ 399,00</span>
+            <button className="bg-slate-900 text-slate-100 
+            py-3 px-10 rounded-full 
+            hover:text-gold-700 transition ease-in-out delay-140 
+            hover:-translate-1 hover:scale-110 hover:bg-slate-700 duration-200"
+            >
+              Escolher o plano
+            </button>
+            <div className="place-self-start pl-16 mt-2 text-sm space-y-2">
+              <p>Contabilidade completa</p>
+              <p>Folha de pagamentos (grátis até 3 funcionários)</p>
+              <p>Pró-Labore</p>
+              <p>Impostos e obrigações</p>
+              <p>Planejamento tributário</p>
+              <p>Relatórios</p>
+              <p>Abertura gratuita*</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 items-center max-w-sm p-6
+           bg-slate-100 rounded-lg"
+          >
+            <h3
+              className="font-bold text-slate-700"
+            >
+              Microempreendedor Individual (MEI)
+            </h3>
+            <span className="mx-auto font-bold text-4xl">R$ 149,00</span>
+            <button className="bg-slate-900 text-slate-100 
+            py-3 px-10 rounded-full 
+            hover:text-gold-700 transition ease-in-out delay-140 
+              hover:-translate-1 hover:scale-110 hover:bg-slate-700 duration-200"
+            >
+              Escolher o plano
+            </button>
+            <div className="place-self-start pl-16 mt-2 text-sm space-y-2">
+              <p>Contabilidade completa</p>
+              <p>Impostos e obrigações</p>
+              <p>Planejamento tributário</p>
+              <p>Relatórios</p>
+              <p>Abertura gratuita*</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   )
