@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Logo from "../../assets/Logo.png"
+import Logo from "../../assets/logo.svg"
 
 export function Header() {
   return (
@@ -9,8 +9,7 @@ export function Header() {
     >
       <Image
         src={Logo}
-        width={96}
-        height={96}
+        width={190}
         alt=""
       />
       <nav className="text-gray-100 text-lg flex gap-8">

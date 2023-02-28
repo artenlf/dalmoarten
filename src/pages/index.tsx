@@ -285,7 +285,7 @@ export default function Home() {
               Microempreendedor Individual (MEI)
             </h3>
             <span
-              className="mx-auto font-bold text-4xl"
+              className="my-2 mx-auto font-bold text-4xl"
             >
               R$ 149,00
             </span>
@@ -313,7 +313,7 @@ export default function Home() {
             >
               Prestadoras de Serviços
             </h3>
-            <span className="mx-auto font-bold text-4xl">R$ 399,00</span>
+            <span className="my-2 mx-auto font-bold text-4xl">R$ 399,00</span>
             <button className="bg-slate-900 text-slate-100 
             py-3 px-10 rounded-full 
             hover:text-gold-700 transition ease-in-out delay-140 
@@ -339,7 +339,7 @@ export default function Home() {
             >
               Microempreendedor Individual (MEI)
             </h3>
-            <span className="mx-auto font-bold text-4xl">R$ 149,00</span>
+            <span className="my-2 mx-auto font-bold text-4xl">R$ 149,00</span>
             <button className="bg-slate-900 text-slate-100 
             py-3 px-10 rounded-full 
             hover:text-gold-700 transition ease-in-out delay-140 

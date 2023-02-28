@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Logo from "../../assets/Logo.png"
+import Logo from "../../assets/logo.svg"
 import ProfilePicture from "../../assets/profile.jpg"
 
 
@@ -13,7 +13,7 @@ export function Footer() {
         className="flex gap-32 items-center justify-between pb-8 
       border-b-[1px] border-b-gray-500"
       >
-        <Image src={Logo} alt='' width={120} />
+        <Image src={Logo} alt='' width={190} />
         <div className="max-w-[35rem] text-gray-100 font-bold space-y-2">
           <span>Rua Barão de Jaguara, 1481 - Ed. Cruz Alta - 10º andar - Cj. 102/104 Centro, Campinas/SP</span>
           <p>CEP: <span>13015-002</span></p>
