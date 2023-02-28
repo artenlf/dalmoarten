@@ -7,10 +7,10 @@ import ProfilePicture from "../../assets/profile.jpg"
 export function Footer() {
   return (
     <footer
-      className="bg-slate-900 w-full flex flex-col gap-8 px-8 py-8"
+      className="bg-slate-900 w-full flex flex-col gap-8 px-32 py-8"
     >
       <div
-        className="flex gap-32 items-center justify-between pb-8 
+        className="flex items-center justify-between pb-8 
       border-b-[1px] border-b-gray-500"
       >
         <Image src={Logo} alt='' width={190} />
