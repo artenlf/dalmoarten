@@ -18,6 +18,12 @@ export function Footer() {
           <span>Rua Barão de Jaguara, 1481 - Ed. Cruz Alta - 10º andar - Cj. 102/104 Centro, Campinas/SP</span>
           <p>CEP: <span>13015-002</span></p>
           <p>Telefone: <span>(19) 3237-1983 / (19) 3237-1974</span></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14701.240185074275!2d-47.0605068!3d-22.9019323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8b4ba712ead%3A0xc01d8ca0c8fda5e!2sDalmo%20Arten%20Contabilidade!5e0!3m2!1spt-BR!2sbr!4v1677581776297!5m2!1spt-BR!2sbr"
+            width="600" height="450" className="border-0 max-h-48 max-w-xs"
+            allowFullScreen loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
         <nav className="text-gray-100 grid grid-cols-2 gap-4">
           <Link

@@ -3,36 +3,54 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Image from "next/image";
 import Link from "next/link";
 import { Buildings, Calculator, Person, Receipt } from "phosphor-react";
-import BannerImage from "../assets/banner/1.png";
+import BannerImage from "../assets/hero/2.svg";
 
 export default function Home() {
   return (
-    <main>
-      <section className="bg-slate-300 flex items-center py-4 px-32 justify-evenly">
-        <div className="flex flex-col gap-8 max-w-[55rem]">
-          <h1
-            className="text-4xl font-bold text-slate-900">
-            Contabilidade descomplicada e tranquilidade para o seu negócio crescer!
-          </h1>
-          <h2
-            className="text-gray-600 max-w-[32.5rem]"
+    <main
+      className="bg-[url('../assets/hero/2.svg')]
+    bg-center bg-no-repeat bg-fixed"
+    >
+      <section
+        className=" flex items-center justify-evenly 
+        bg-slate-300 bg-opacity-95 h-[calc(100vh-8rem)]
+      "
+      >
+        <div className="flex items-center justify-between py-8 px-32
+         bg-slate-300 bg-opacity-60"
+        >
+          <div
+            className="flex flex-col gap-8"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nostrum at.
-            Omnis vel ipsum suscipit facilis esse natus dolorem.
-            Blanditiis esse similique adipisci dolorem laboriosam necessitatibus delectus!
-            Sequi, necessitatibus! Sequi!
-          </h2>
-          <button
-            className="bg-slate-900 text-gray-100 font-bold py-5 w-48 rounded-full 
+            <h1
+              className="text-4xl font-bold text-slate-900">
+              Contabilidade descomplicada e tranquilidade para o seu negócio crescer!
+            </h1>
+            <span
+              className="text-gray-600 text-justify max-w-[32.5rem] ml-2"
+            >
+              Oferecemos planos de serviços especializados para simplificar a
+              sua rotina e poupar tempo e dinheiro. No digital, ou no presencial,
+              estaremos ao seu lado, prontos para auxiliar na construção e
+              desenvolvimento do seu negócio. Que tal ter sua empresa regularizada
+              e pagando o mínimo de impostos?
+            </span>
+            <button
+              className="bg-slate-900 text-gray-100 font-bold py-5 w-48 rounded-full 
           hover:text-gold-700 transition ease-in-out delay-140 
          hover:-translate-1 hover:scale-110 hover:bg-slate-700 duration-200"
-          >
-            Saiba Mais
-          </button>
+            >
+              Saiba Mais
+            </button>
+          </div>
+          <Image
+            src={BannerImage}
+            height={400}
+            alt=""
+          />
         </div>
-        <Image src={BannerImage} height={400} alt="" />
-      </section>
-      <section className="px-48 py-8 flex flex-col items-center">
+      </section >
+      <section className="px-48 py-8 flex flex-col items-center bg-slate-200">
         <h2
           className="font-bold text-2xl text-slate-900 mx-auto mb-8"
         >
@@ -226,7 +244,7 @@ export default function Home() {
         <p className="text-sm text-gray-300 mt-8">Não encontrou a sua atividade? Envie sua mensagem agora mesmo para que um de nossos especialistas possa te orientar, sem custo algum.</p>
       </section>
       <section
-        className=" bg-slate-300 flex flex-col p-8 gap-4"
+        className=" bg-slate-300 bg-opacity-95 flex flex-col p-8 gap-4"
       >
         <h2
           className="font-bold text-3xl text-slate-900 mx-auto max-w-xl"
@@ -273,7 +291,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="py-4 px-32 flex flex-col gap-2 justify-evenly items-center"
+        className="bg-slate-200 py-4 px-32 flex flex-col gap-2 justify-evenly items-center"
       >
         <h2 className="font-bold text-2xl text-slate-900">Confira os nossos Planos</h2>
         <span>Na medida certa para o seu negócio</span>
@@ -357,6 +375,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </main >
   )
 }
