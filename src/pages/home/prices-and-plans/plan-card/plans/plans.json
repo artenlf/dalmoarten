@@ -1,0 +1,26 @@
+{
+  "MEI": {
+    "title": "Microempreendedor Individual (MEI)",
+    "price": 149.00,
+    "services": [
+      "Contabilidade completa",
+      "Impostos e obrigações",
+      "Planejamento tributário",
+      "Relatórios",
+      "Abertura gratuita*"
+    ]
+  },
+  "Services": {
+    "title": "Prestadoras de Serviços",
+    "price": 399.00,
+    "services": [
+      "Contabilidade completa",
+      "Folha de pagamentos (grátis até 3 funcionários)",
+      "Pró-Labore",
+      "Impostos e obrigações",
+      "Planejamento tributário",
+      "Relatórios",
+      "Abertura gratuita*"
+    ]
+  }
+}
