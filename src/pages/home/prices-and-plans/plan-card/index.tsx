@@ -1,4 +1,4 @@
-import plans from './plans/plans'
+import plans from './plans/plans.json'
 
 export default function PlanCard() {
   return (

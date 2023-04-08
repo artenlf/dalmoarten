@@ -1,6 +1,6 @@
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
-import accordionItems from './accordion-items/accordionItems'
+import accordionItems from './accordion-items/accordionItems.json'
 
 export default function AccordionSection() {
   return (

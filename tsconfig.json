@@ -28,7 +28,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/pages/home/prices-and-plans/plan-card/plans/plans.js",
+    "src/pages/home/accordion/accordion-items/accordionItems.js"
   ],
   "exclude": [
     "node_modules"
