@@ -1,18 +1,9 @@
-import Link from 'next/link'
-import links from './footer-links.json'
+import NavLinks from '@/components/NavLinks'
 
 export default function FooterNav() {
   return (
     <nav className="text-gray-100 grid grid-cols-2 gap-4">
-      {links.map(({ href, label }) => (
-        <Link
-          key={href}
-          href={href}
-          className="hover:text-gold-700 transition ease-in-out delay-140 hover:underline"
-        >
-          {label}
-        </Link>
-      ))}
+      <NavLinks />
       <a
         href="https://app.acessorias.com/?login"
         target="_blank"
