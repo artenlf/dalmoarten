@@ -1,17 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
-import Logo from "../../assets/logo.svg"
+import Image from 'next/image'
+import Link from 'next/link'
+import Logo from '../../assets/logo.svg'
 
 export function Header() {
   return (
-    <header
-      className="bg-slate-900 w-full h-32 flex items-center justify-between px-8"
-    >
-      <Image
-        src={Logo}
-        width={190}
-        alt=""
-      />
+    <header className="bg-slate-900 w-full h-32 flex items-center justify-between px-8">
+      <Image src={Logo} width={190} alt="" />
       <nav className="text-gray-100 text-lg flex gap-8">
         <Link
           href={'/'}
